@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/lbl_title"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="30dp"
+        android:text="Calculator"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:background="#f00"
+        />
+
+    <TextView
+        android:id="@+id/lbl_input"
+        android:textSize="28dp"
+        android:padding="10dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#476"/>
+
+    <TextView
+        android:id="@+id/lbl_result"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#777"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#000"
+                    android:text="AC"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:text="Clr"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="/"/>
+
+
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AC"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clr"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="%"/>
+
+                <ImageButton
+                    android:id="@+id/btnOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/equal_icon" />
+
+
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
